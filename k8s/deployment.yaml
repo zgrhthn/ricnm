@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sypmd
+  name: wqfavn
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sypmd
+      app: wqfavn
   template:
     metadata:
       labels:
-        app: sypmd
+        app: wqfavn
     spec:
       containers:
-      - image: okteto.dev/sypmd:latest
-        name: sypmd
+      - image: okteto.dev/wqfavn:latest
+        name: wqfavn
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "azmovies.net"
+          value: "okmusi.com"
         - name: Vless_UUID
-          value: "2333c208-831f-437c-ba2f-90105e7c47fb"
+          value: "0d2a7d9d-4093-48c4-8d1b-6c06760dc187"
         - name: Vless_Path
-          value: "/vlessertrj"
+          value: "/vlesseopp"
         - name: Vmess_UUID
-          value: "2333c208-831f-437c-ba2f-90105e7c47fb"
+          value: "0d2a7d9d-4093-48c4-8d1b-6c06760dc187"
         - name: Vmess_Path
-          value: "/vmesssdhfj"
+          value: "/vmessvbbz"
         - name: Share_Path
           value: "$Share_Path"
