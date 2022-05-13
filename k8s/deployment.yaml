@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: afdbhd
+  name: sypmd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: afdbhd
+      app: sypmd
   template:
     metadata:
       labels:
-        app: afdbhd
+        app: sypmd
     spec:
       containers:
-      - image: okteto.dev/afdbhd:latest
-        name: afdbhd
+      - image: okteto.dev/sypmd:latest
+        name: sypmd
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "vecteezy.com"
+          value: "azmovies.net"
         - name: Vless_UUID
-          value: "17dd08a9-8e52-437f-9df8-6972bec7fb38"
+          value: "2333c208-831f-437c-ba2f-90105e7c47fb"
         - name: Vless_Path
-          value: "/vlessytj"
+          value: "/vlessertrj"
         - name: Vmess_UUID
-          value: "17dd08a9-8e52-437f-9df8-6972bec7fb38"
+          value: "2333c208-831f-437c-ba2f-90105e7c47fb"
         - name: Vmess_Path
-          value: "/vmessseree"
+          value: "/vmesssdhfj"
         - name: Share_Path
           value: "$Share_Path"
