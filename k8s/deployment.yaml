@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ricnm
+  name: afdbhd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ricnm
+      app: afdbhd
   template:
     metadata:
       labels:
-        app: ricnm
+        app: afdbhd
     spec:
       containers:
-      - image: okteto.dev/ricnm:latest
-        name: ricnm
+      - image: okteto.dev/afdbhd:latest
+        name: afdbhd
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "pixabay.com"
+          value: "vecteezy.com"
         - name: Vless_UUID
-          value: "efc913bb-63a3-41e3-8d77-123eb9304dcb"
+          value: "17dd08a9-8e52-437f-9df8-6972bec7fb38"
         - name: Vless_Path
-          value: "/vlesskf"
+          value: "/vlessytj"
         - name: Vmess_UUID
-          value: "efc913bb-63a3-41e3-8d77-123eb9304dcb"
+          value: "17dd08a9-8e52-437f-9df8-6972bec7fb38"
         - name: Vmess_Path
-          value: "/vmessweju"
+          value: "/vmessseree"
         - name: Share_Path
           value: "$Share_Path"
