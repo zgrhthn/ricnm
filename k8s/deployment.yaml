@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wqfavn
+  name: mbxyt
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wqfavn
+      app: mbxyt
   template:
     metadata:
       labels:
-        app: wqfavn
+        app: mbxyt
     spec:
       containers:
-      - image: okteto.dev/wqfavn:latest
-        name: wqfavn
+      - image: okteto.dev/mbxyt:latest
+        name: mbxyt
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "okmusi.com"
         - name: Vless_UUID
-          value: "0d2a7d9d-4093-48c4-8d1b-6c06760dc187"
+          value: "720bfe3a-b7fc-4c0a-ab6c-b6db94433985"
         - name: Vless_Path
-          value: "/vlesseopp"
+          value: "/vlessqwty"
         - name: Vmess_UUID
-          value: "0d2a7d9d-4093-48c4-8d1b-6c06760dc187"
+          value: "720bfe3a-b7fc-4c0a-ab6c-b6db94433985"
         - name: Vmess_Path
-          value: "/vmessvbbz"
+          value: "/vmesswtri"
         - name: Share_Path
           value: "$Share_Path"
