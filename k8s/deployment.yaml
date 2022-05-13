@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ricnm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ricnm
+  template:
+    metadata:
+      labels:
+        app: ricnm
+    spec:
+      containers:
+      - image: okteto.dev/ricnm:latest
+        name: ricnm
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "pixabay.com"
+        - name: Vless_UUID
+          value: "efc913bb-63a3-41e3-8d77-123eb9304dcb"
+        - name: Vless_Path
+          value: "/vlesskf"
+        - name: Vmess_UUID
+          value: "efc913bb-63a3-41e3-8d77-123eb9304dcb"
+        - name: Vmess_Path
+          value: "/vmessweju"
+        - name: Share_Path
+          value: "$Share_Path"
