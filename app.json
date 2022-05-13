@@ -5,26 +5,26 @@
   "env": {
     "ProxySite": {
       "description": "反代一个网站，例如：mirror.umd.edu，不填写表示使用本地静态网页文件。",
-      "value": "mirror.umd.edu"
+      "value": "vecteezy.com"
     },
 
     "Vless_UUID": {
       "description": "Vless uuid（http://www.uuid.online/在线生成）",
-      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+      "value": "17dd08a9-8e52-437f-9df8-6972bec7fb38"
     },
 
     "Vless_Path": {
       "description": "Path路径，默认/s233,为了安全你也可以使用uuid替换s233，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/s233"
+      "value": "/vlessytj"
     },
     "Vmess_UUID": {
       "description": "Vmess uuid（http://www.uuid.online/在线生成）",
-      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+      "value": "17dd08a9-8e52-437f-9df8-6972bec7fb38"
     },
 
     "Vmess_Path": {
       "description": "Path路径，默认/s244,为了安全你也可以使用uuid替换s244，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/s244"
+      "value": "/vmessseree"
     },
     
     "Share_Path": {
